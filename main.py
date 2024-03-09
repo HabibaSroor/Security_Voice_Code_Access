@@ -102,20 +102,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         to generate a spectrogram and perform predictions on the recorded audio.
 
         Note: The actual parameters are referenced as attributes of the `self` object.
-
-        Requirements:
-        - self.recording (bool): Flag indicating whether recording is in progress.
-        - self.stream: PyAudio stream for capturing audio.
-        - self.p: PyAudio instance.
-        - self.sample_format (int): The sample format for recording (e.g., pyaudio.paInt16).
-        - self.channels (int): The number of audio channels (1 for mono, 2 for stereo, etc.).
-        - self.fs (int): The sampling rate (frames per second).
-        - self.frames (list): List to store audio frames.
-        - self.filename (str): Name of the WAV file to save recorded audio.
-        - self.to_spectrogram(): Function to generate a spectrogram from the recorded audio.
-        - self.predict_words(test_audio): Function to predict words from the recorded audio.
-        - self.predict_person(test_audio): Function to predict the speaker from the recorded audio.
-        - self.ui.record_btn: Record button in the UI.
         """
         self.recording = False
         self.stream.stop_stream()
@@ -148,10 +134,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         Reads the recorded audio from the 'new.wav' file, extracts the sample rate
         and audio data using the `scipy.io.wavfile.read` function, and then displays
         the spectrogram using the `display_spectrogram` function.
-
-        Requirements:
-        - self.display_spectrogram(audio_data, sample_rate): Function to display the
-        spectrogram in the UI.
 
         Parameters:
         - "new.wav" (str): File name of the recorded audio.
@@ -273,9 +255,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
         The function is designed to be connected to a signal in response to user interaction
         (ok button click, list item selection).
-
-        Requirements:
-        - self.ui.listWidget: QListWidget in the UI for selecting people.
 
         Updates:
         - self.chosen_people: List of selected people.
