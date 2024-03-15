@@ -23,7 +23,7 @@ The UI provides the following elements:
    - Table showing the percentage of match between the spoken sentence and each of the three saved passcode sentences.
    - Table showing the percentage of match between the spoken voice and each of the 8 saved individuals.
 4. **Access Status Indicator(Locker icon):** Displays whether access is gained or denied based on the algorithm results.
-
+![Project View ](img.jpeg "")
 ## Implementation Details
 
 - The software utilizes fingerprint and spectrogram concepts for voice recognition.
