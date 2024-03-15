@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>934</width>
-    <height>467</height>
+    <width>928</width>
+    <height>469</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1691,7 +1691,7 @@ font: italic 12pt &quot;Segoe UI&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>934</width>
+     <width>928</width>
      <height>22</height>
     </rect>
    </property>

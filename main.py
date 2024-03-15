@@ -155,11 +155,13 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         - Fs (int): Sampling rate of the audio data.
         """
         plt.specgram(audio_data, NFFT=1024, Fs = Fs, noverlap=512, cmap='viridis')
+        # # Hide the numbers on the axes
+        # plt.gca().axes.get_xaxis().set_visible(False)
+        # plt.gca().axes.get_yaxis().set_visible(False)
         # plt.axis('off')
         plt.xlabel('Time (s)')
         plt.ylabel('Frequency (Hz)')
-        plt.title('Spectrogram')
-        plt.savefig('spectrogram.png')  # Save the spectrogram image
+        plt.savefig('spectrogram.png',  transparent=True)  # Save the spectrogram image
         plt.close()
 
         # Display the spectrogram image in the UI
