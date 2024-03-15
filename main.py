@@ -101,7 +101,6 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         writes the recorded audio frames to a WAV file. Additionally, it invokes functions
         to generate a spectrogram and perform predictions on the recorded audio.
 
-        Note: The actual parameters are referenced as attributes of the `self` object.
         """
         self.recording = False
         self.stream.stop_stream()
